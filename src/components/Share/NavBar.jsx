@@ -47,13 +47,9 @@ const NavBar = () => {
             </ul>
           </div>
 
-          <Image
-            className="bg-white"
-            src={NavIcon}
-            width={45}
-            height={30}
-            alt=""
-          />
+          <p className="font-bold text-2xl">
+            <i>Digital Library</i>
+          </p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
