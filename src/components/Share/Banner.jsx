@@ -12,7 +12,13 @@ const Banner = () => {
         <button className="btn">Learn More</button>
       </div>
       <div>
-        <Image src={BannerImg} width={500} height={500} alt="" />
+        <Image
+          src={BannerImg}
+          width={500}
+          height={500}
+          alt=""
+          className="rounded-full"
+        />
       </div>
     </div>
   );
