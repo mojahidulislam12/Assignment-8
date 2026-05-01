@@ -1,0 +1,115 @@
+
+{
+"books" : [
+  {
+    "id": 1,
+    "title": "The Lost Horizon",
+    "author": "James Hilton",
+    "description": "A group of travelers discovers a mystical valley hidden in the Himalayas.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/YTYmbGdY/image.png"
+  },
+  {
+    "id": 2,
+    "title": "Deep Work Principles",
+    "author": "Cal Newport",
+    "description": "A guide to focused success in a distracted digital world.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://i.ibb.co.com/3y2FJnGX/image.png"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Reality",
+    "author": "David Bohm",
+    "description": "An exploration of the strange and fascinating world of quantum physics.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/hRRCggMC/image.png"
+  },
+  {
+    "id": 4,
+    "title": "The Silent River",
+    "author": "Aria Montgomery",
+    "description": "A touching story of love, loss, and rediscovery along a quiet river town.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/gL81xwpj/image.png"
+  },
+  {
+    "id": 5,
+    "title": "Modern Web Development",
+    "author": "Ethan Brown",
+    "description": "A complete guide to building modern web applications using JavaScript frameworks.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://i.ibb.co.com/gLyj9zc5/image.png"
+  },
+  {
+    "id": 6,
+    "title": "The Universe Explained",
+    "author": "Neil deGrasse Tyson",
+    "description": "A simplified explanation of the universe, galaxies, and cosmic mysteries.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co.com/Wv1dhDVR/image.png"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of Time",
+    "author": "Elena Rivers",
+    "description": "A historical tale spanning generations and hidden secrets of the past.",
+    "category": "Story",
+    "available_quantity": 3,
+    "image_url": "https://i.ibb.co.com/6R9Vf6Y1/image.png"
+  },
+  {
+    "id": 8,
+    "title": "AI for Beginners",
+    "author": "Andrew Ng",
+    "description": "An introduction to artificial intelligence concepts and applications.",
+    "category": "Tech",
+    "available_quantity": 9,
+    "image_url": "https://i.ibb.co.com/FbkvMjSq/image.png"
+  },
+  {
+    "id": 9,
+    "title": "The Science of Life",
+    "author": "Rachel Carson",
+    "description": "A deep dive into biological systems and environmental science.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/JFRVQDpJ/image.png"
+  },
+  {
+    "id": 10,
+    "title": "Broken Dreams",
+    "author": "John Green",
+    "description": "A heartfelt story about ambition, failure, and redemption.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/0pRQsn5T/image.png"
+  },
+  {
+    "id": 11,
+    "title": "Data Structures in Depth",
+    "author": "Robert Lafore",
+    "description": "Comprehensive guide to understanding data structures and algorithms.",
+    "category": "Tech",
+    "available_quantity": 11,
+    "image_url": "https://i.ibb.co.com/xKzJLy4r/image.png"
+  },
+  {
+    "id": 12,
+    "title": "Exploring Mars",
+    "author": "Carl Sagan",
+    "description": "Insights into Mars exploration and the future of space travel.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/rRBNGzCG/image.png"
+  }
+]
+}
+ 
+

@@ -2,7 +2,7 @@ import BannerImg from "@/assets/banner.jpg";
 import Image from "next/image";
 const Banner = () => {
   return (
-    <div className="max-w-285 mx-auto flex justify-between items-center mt-10">
+    <div className="max-w-300 mx-auto flex justify-between items-center mt-10">
       <div className="space-y-4">
         <h1 className="font-bold text-3xl text-blue-400">Book Store</h1>
         <p className="font-medium text-[18px]">

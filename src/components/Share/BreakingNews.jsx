@@ -17,7 +17,7 @@ const books = [
 const BreakingNews = () => {
   return (
     <div>
-      <div className="max-w-285 mx-auto p-4 bg-white flex justify-between items-center mt-7.5">
+      <div className="max-w-300 mx-auto p-4 bg-white flex justify-between items-center mt-7.5">
         <button className="btn bg-[#D72050] text-white -ml-5">Latest</button>
         <Marquee className="gap-10" pauseOnHover={true}>
           {books.map((book, i) => (

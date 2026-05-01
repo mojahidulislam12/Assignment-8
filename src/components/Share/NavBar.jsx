@@ -3,23 +3,24 @@ import NavIcon from "@/assets/10433045.png";
 import user1 from "@/assets/user.png";
 import Image from "next/image";
 import Link from "next/link";
+import NavLink from "./NavLink";
 const NavBar = () => {
   const links = (
     <>
       <li className="font-normal text-[20px]">
-        <Link href={"/"}>Home</Link>
+        <NavLink href={"/"}>Home</NavLink>
       </li>
       <li className="font-normal text-[20px]">
-        <Link href={"/all-books"}>All Books</Link>
+        <NavLink href={"/all-books"}>All Books</NavLink>
       </li>
       <li className="font-normal text-[20px]">
-        <Link href={"/my-profile"}>My Profile</Link>
+        <NavLink href={"/my-profile"}>My Profile</NavLink>
       </li>
     </>
   );
   return (
     <div>
-      <div className="navbar bg-base-100 max-w-285 mx-auto">
+      <div className="navbar bg-base-100 max-w-300 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +56,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <Image src={user1} width={41} height={41} alt="" />
+          <Image src={user1} width={45} height={45} alt="" />
           <button className="btn">
             <Link href={"/login"}>Login</Link>
           </button>
