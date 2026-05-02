@@ -1,10 +1,15 @@
+"use client";
 import React from "react";
 import NavIcon from "@/assets/10433045.png";
 import user1 from "@/assets/user.png";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { authClient } from "@/lib/auth-client";
 const NavBar = () => {
+  const { data: session } = authClient.useSession();
+  const user = session?.user;
+  console.log(user);
   const links = (
     <>
       <li className="font-normal text-[20px]">
@@ -55,12 +60,39 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end flex gap-4">
-          <Image src={user1} width={45} height={45} alt="" />
-          <button className="btn">
-            <Link href={"/login"}>Login</Link>
-          </button>
-        </div>
+        {user ? (
+          <div className="navbar-end flex gap-4">
+            <h1>
+              Hello, <span className="font-bold"> {user.name}</span>
+            </h1>
+            <Image
+              src={user.image || user1}
+              width={45}
+              height={45}
+              alt=""
+              className="rounded-full"
+            />
+            <button
+              onClick={async () => await authClient.signOut()}
+              className="btn"
+            >
+              Log Out
+            </button>
+          </div>
+        ) : (
+          <div className="navbar-end flex  items-center gap-4">
+            <Image
+              src={user1}
+              alt="user1"
+              width={41}
+              height={41}
+              className="rounded-full"
+            />
+            <button className="btn w-35 bg-[#403F3F] text-white">
+              <Link href={"/login"}>Login</Link>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
