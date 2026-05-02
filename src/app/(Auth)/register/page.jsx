@@ -43,7 +43,7 @@ const RegisterPage = () => {
     console.log(data);
   };
   return (
-    <div className="max-w-300 mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100">
+    <div className="max-w-300 mx-auto min-h-[80vh] flex justify-center items-center ">
       <div className="p-4 w-100  rounded-xl bg-white">
         <form className="space-y-2" onSubmit={handleSubmit(handleLogin)}>
           <fieldset className="fieldset">
