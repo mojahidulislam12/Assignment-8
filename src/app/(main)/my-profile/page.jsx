@@ -1,7 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
-import React from "react";
 
 const ProfilePage = () => {
   const { data: session } = authClient.useSession();
