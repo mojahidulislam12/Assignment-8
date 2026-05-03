@@ -11,7 +11,6 @@ const ProfilePage = () => {
     <div className="max-w-300 mx-auto">
       <div className="overflow-x-auto">
         <table className="table">
-          {/* head */}
           <thead>
             <tr>
               <th>Image</th>
@@ -22,14 +21,13 @@ const ProfilePage = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
             <tr>
               <td>
                 <div className="flex items-center gap-3">
                   <div className="avatar">
                     <div className="mask mask-squircle h-12 w-12">
                       <Image
-                        src={user.image}
+                        src={user?.image}
                         width={45}
                         height={45}
                         alt=""
@@ -53,7 +51,6 @@ const ProfilePage = () => {
               </th>
             </tr>
           </tbody>
-          {/* foot */}
         </table>
       </div>
     </div>
