@@ -19,7 +19,7 @@ const NavBar = () => {
         <NavLink href={"/all-books"}>All Books</NavLink>
       </li>
       <li className="font-normal text-[20px]">
-        <NavLink href={"/my-profile"}>My Profile</NavLink>
+        <NavLink href={"/my-profile"}>Profile</NavLink>
       </li>
     </>
   );
