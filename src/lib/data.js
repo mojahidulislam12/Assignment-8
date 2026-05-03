@@ -1,6 +1,6 @@
 export const getAllBooks = async () => {
   const res = await fetch("http://localhost:5000/books", {
-    cache: "force-cache",
+    cache: "no-store",
   });
   return res.json();
 };
