@@ -7,7 +7,7 @@ const AllBooksPage = async () => {
   return (
     <div className="max-w-300 mx-auto">
       <h1 className="font-bold text-2xl">All Books</h1>
-      <div className="grid grid-cols-4 max-w-300 mx-auto gap-5 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-2">
         {books.map((book, i) => (
           <BookCard key={i} book={book}></BookCard>
         ))}

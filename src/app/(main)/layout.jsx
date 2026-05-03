@@ -1,4 +1,5 @@
 import BookCount from "@/components/HomePage/BookCount";
+import BorrowBook from "@/components/HomePage/BorrowBook";
 import Banner from "@/components/Share/Banner";
 import BreakingNews from "@/components/Share/BreakingNews";
 import Footer from "@/components/Share/Footer";
@@ -12,7 +13,7 @@ const MainLayout = ({ children }) => {
       <Banner></Banner>
       <BreakingNews></BreakingNews>
       {children}
-      <BookCount></BookCount>
+
       <Footer></Footer>
     </div>
   );
