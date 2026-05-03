@@ -54,7 +54,7 @@ const NavBar = () => {
           </div>
 
           <p className="font-bold text-2xl">
-            <i>Digital Library</i>
+            <Link href={"/"}>Digital Library</Link>
           </p>
         </div>
         <div className="navbar-center hidden lg:flex">

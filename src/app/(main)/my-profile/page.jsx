@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProfilePage = () => {
-  return <div>ProfilePage</div>;
+  return <div className="max-w-300 mx-auto">ProfilePage</div>;
 };
 
 export default ProfilePage;
