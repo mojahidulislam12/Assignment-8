@@ -1,27 +1,55 @@
-// export const generateStaticParams = async () => {
-//   const res = await fetch("http://localhost:5000/books", {
-//     cache: "force-cache",
-//   });
-//   const books = await res.json();
-
-//   return books.slice(1, 12).map((book) => ({ bookId: book.id }));
-// };
-
-// const bookDetails = async ({ params }) => {
-//   const { id } = await params;
-//   const res = await fetch(`http://localhost:5000/books/${id}`, {
-//     cache: "force-cache",
-//   });
-//   const { title, author, description } = await res.json();
-//   console.log(id);
-//   return <div>Book Details:{title}</div>;
-// };
-
-// export default bookDetails;
+import { getAllBooks } from "@/lib/data";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
+import { CiBookmark, CiShare2 } from "react-icons/ci";
+import { FaEye } from "react-icons/fa";
+import { IoIosStar } from "react-icons/io";
 
-const BookDetails = () => {
-  return <div className="max-w-300 mx-auto">Book Details</div>;
+const BookDetails = async ({ params }) => {
+  const { id } = await params;
+  const booksId = await getAllBooks();
+  console.log(booksId, id);
+  const books = booksId.filter((book) => book.id === id);
+  console.log(books);
+  return (
+    <div className="max-w-300 mx-auto mt-8">
+      <div>
+        {books.map((b, i) => (
+          <div key={i} className="card card-side bg-base-100 shadow-sm">
+            <figure className="p-4">
+              <Image src={b.image_url} width={120} height={120} alt="" />
+            </figure>
+            <div className="card-body ml-20">
+              <h2 className="font-semibold text-3xl">
+                Book Name:{" "}
+                <span className="font-semibold text-2xl">{b.title}</span>
+              </h2>
+              <h2 className="font-semibold text-3xl">
+                Author:{" "}
+                <span className="font-semibold text-2xl"> {b.author}</span>
+              </h2>
+              <h2 className="font-semibold text-3xl">
+                Category:{" "}
+                <span className="font-semibold text-2xl">
+                  {b.category}
+                </span>{" "}
+              </h2>
+              <h2 className="font-semibold text-2xl">
+                Available Quantity:
+                <span className="font-semibold text-3xl">
+                  {" "}
+                  {b.available_quantity}
+                </span>
+              </h2>
+              <p className="font-semibold text-2xl">{b.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default BookDetails;

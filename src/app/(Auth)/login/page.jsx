@@ -1,4 +1,5 @@
 "use client";
+
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useState } from "react";
@@ -25,7 +26,7 @@ const LoginPage = () => {
       alert(error.message);
     }
     if (res) {
-      alert("Registration Successful");
+      ale("Login Successful");
     }
   };
   const handleGoogleSignin = async () => {
