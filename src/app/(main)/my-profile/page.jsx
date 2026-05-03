@@ -39,13 +39,13 @@ const ProfilePage = () => {
               </td>
               <td>
                 <div>
-                  <div className="font-bold">{user.name}</div>
+                  <div className="font-bold">{user?.name}</div>
                 </div>
               </td>
               <td>
-                <span className="">{user.email}</span>
+                <span className="">{user?.email}</span>
               </td>
-              <td>{user.id}</td>
+              <td>{user?.id}</td>
               <th>
                 <button className="btn  btn-xs">Update</button>
               </th>
