@@ -17,11 +17,14 @@ const BookDetails = async ({ params }) => {
     <div className="max-w-300 mx-auto mt-8">
       <div>
         {books.map((b, i) => (
-          <div key={i} className="card card-side bg-base-100 shadow-sm">
+          <div
+            key={i}
+            className=" flex-row md:flex card-side bg-base-100 shadow-sm"
+          >
             <figure className="p-4">
-              <Image src={b.image_url} width={120} height={120} alt="" />
+              <Image src={b.image_url} width={200} height={120} alt="" />
             </figure>
-            <div className="card-body ml-20">
+            <div className="card-body ml:0 md:ml-20">
               <h2 className="font-semibold text-3xl">
                 Book Name:{" "}
                 <span className="font-semibold text-2xl">{b.title}</span>

@@ -8,8 +8,12 @@ const AllBooksPage = async () => {
 
   return (
     <div className="max-w-300 mx-auto">
-      <h1 className="font-bold text-2xl">All Books</h1>
-      <form className="mt-4" action="/all-books" method="GET">
+      <h1 className="font-bold text-2xl ml-4 md:ml-0 ">All Books</h1>
+      <form
+        className="mt-4 ml-4 md:ml-0 mr-4 md:mr-0"
+        action="/all-books"
+        method="GET"
+      >
         <input
           type="text"
           name="search"
@@ -23,7 +27,7 @@ const AllBooksPage = async () => {
           Search
         </button>
       </form>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-2 -ml-0.5 md:ml-0 -mr-0.5 md:mr-0">
         {books.map((book, i) => (
           <BookCard key={i} book={book}></BookCard>
         ))}

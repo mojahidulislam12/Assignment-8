@@ -4,7 +4,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="max-w-300 mx-auto flex justify-between items-center mt-10">
-      <div className="space-y-4">
+      <div className="space-y-4 ml-4 md:ml-0 mr-4 md:mr-0">
         <h1 className="font-bold text-3xl text-blue-400">Book Store</h1>
         <p className="font-medium text-[18px]">
           An online platform where users can browse, search, and <br /> borrow

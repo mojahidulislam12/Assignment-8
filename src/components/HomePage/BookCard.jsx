@@ -6,8 +6,8 @@ const BookCard = ({ book }) => {
   const { id } = book;
   return (
     <div>
-      <div className="card h-120 bg-base-100  shadow-sm">
-        <figure className=" pt-5">
+      <div className="card h-120 bg-base-100  shadow-sm ml-4 md:ml-0 mr-4 md:mr-0">
+        <figure className="-ml-0.5 md:ml-0 -mr-0.5 md:mr-0  pt-5">
           <Image src={book.image_url} width={250} height={200} alt="" />
         </figure>
         <div className="card-body ">

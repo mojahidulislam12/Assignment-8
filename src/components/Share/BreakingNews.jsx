@@ -17,16 +17,18 @@ const books = [
 const BreakingNews = () => {
   return (
     <div>
-      <div className="max-w-300 mx-auto p-4 bg-white flex justify-between items-center mt-7.5">
-        <button className="btn bg-[#D72050] text-white -ml-5">Latest</button>
-        <Marquee className="gap-10" pauseOnHover={true}>
-          {books.map((book, i) => (
-            <span className="ml-5" key={i}>
-              {" "}
-              {book.text}
-            </span>
-          ))}
-        </Marquee>
+      <div className="max-w-300 mx-auto p-4 bg-white flex justify-between items-center  mt-7.5">
+        <div className="flex ml-4 md:ml-0 mr-4 md:mr-0">
+          <button className="btn bg-[#D72050] text-white -ml-5">Latest</button>
+          <Marquee className="gap-10" pauseOnHover={true}>
+            {books.map((book, i) => (
+              <span className="ml-5" key={i}>
+                {" "}
+                {book.text}
+              </span>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
   );
