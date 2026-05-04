@@ -12,6 +12,7 @@ const BookCard = ({ book }) => {
         </figure>
         <div className="card-body ">
           <h2 className="card-title">{book.title}</h2>
+          <h2 className="card-title">{book.category}</h2>
           <p>{book.author}</p>
           <div className="card-actions">
             <button className="btn btn-primary">
