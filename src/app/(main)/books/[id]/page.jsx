@@ -24,7 +24,7 @@ const BookDetails = async ({ params }) => {
             <figure className="p-4">
               <Image src={b.image_url} width={200} height={120} alt="" />
             </figure>
-            <div className="card-body ml:0 md:ml-20">
+            <div className="card-body ml:0 md:ml-20 mt-0 md:mt-20">
               <h2 className="font-semibold text-3xl">
                 Book Name:{" "}
                 <span className="font-semibold text-2xl">{b.title}</span>
