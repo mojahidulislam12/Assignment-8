@@ -1,7 +1,8 @@
 ***Project Nmae
+
 Online Book Borrowing Platform .
 ***Project Purpose
-This project is a Online Book Borrowing Platform  built using modern web technologies.
+This project is ane Book Borrowing Platform  built using modern web technologies.
 Users can browse books, view details, and manage book-related actions like borrowing.
 ***Live URL
 https://assignment-8-seven-puce.vercel.app/
